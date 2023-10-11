@@ -25,7 +25,7 @@
 		<label>Number of Bedrooms</label> 
 		<input type="text" name="beds" class="w3-input">
 		<br>
-		<div><input type="submit" value="Submit" class="w3-padding-large w3-right w3-hover-purple w3-round-large"></div>
+		<input type="submit" value="Submit" class="w3-padding-large w3-right w3-hover-purple w3-round-large">
 	</form>
 </div>
 
