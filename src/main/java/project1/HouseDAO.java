@@ -31,11 +31,13 @@ public enum HouseDAO {
 		for (House house : houseList) {
 			if (house.getAddress().equals(h.getAddress())) {
 	            houseExists = true;
+	            System.out.println("House already exists");
 	            break;
 			}
 		}
 		if (!houseExists) {
 			houseList.add(h);
+			System.out.println("House added");
 		}
 		
 	}

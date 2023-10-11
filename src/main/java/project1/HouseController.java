@@ -43,7 +43,6 @@ public class HouseController extends HttpServlet {
 		// Add the object to the list
 		HouseDAO.instance.saveHouse(house);
 		
-		
 		// Display list in the JSP file
 		List<House> houseList = HouseDAO.instance.list();
 		request.setAttribute("houseList", houseList);
