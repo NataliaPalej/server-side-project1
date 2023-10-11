@@ -25,7 +25,19 @@ public enum HouseDAO {
 	}
 	
 	public void saveHouse(House h) {
-		houseList.add(h);
+		
+		boolean houseExists = false;
+		
+		for (House house : houseList) {
+			if (house.getAddress().equals(h.getAddress())) {
+	            houseExists = true;
+	            break;
+			}
+		}
+		if (!houseExists) {
+			houseList.add(h);
+		}
+		
 	}
 
 }
