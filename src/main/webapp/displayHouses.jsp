@@ -5,31 +5,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" type="text/css" href="displayHouses.css">
 <title>A00279259 Natalia Palej</title>
 
-<style>
-h1 {
-	background-color: #4e0a54;
-	color: white;
-}
-
-footer {
-	text-align: center;
-  	background-color: #4e0a54;
-  	color: white;
-  	position: absolute;
-  	bottom: 0;
-  	width: 100%;
-}
-</style>
-
 </head>
-
 <body>
-<h1 class="w3-center w3-padding">House Information Details</h1>
+<h1 class="w3-center w3-allerta">House Information Details</h1>
 
-<div class="w3-panel w3-center">
-	<table class="w3-padding">
+<div class="body">
+	<table class="w3-padding w3-panel table-container">
 		<tr>
 			<th class="w3-panel w3-border-right w3-border-bottom">Owner</th>
 			<th class="w3-panel w3-border-right w3-border-bottom">Address</th>
@@ -37,14 +22,13 @@ footer {
 		</tr>
 		<c:forEach items="${houseList}" var="houseObj">
 		<tr>
-			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.owner}" default="name unknown" /></td>
-			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.address}" default="address unknown"/></td>
-			<td class="w3-panel w3-border-bottom"><c:out value="${houseObj.beds}" default="0"/></td>
+			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.owner}" /></td>
+			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.address}" /></td>
+			<td class="w3-panel w3-border-bottom w3-center"><c:out value="${houseObj.beds}" /></td>
 		</tr>
 		</c:forEach>
 	</table>
 </div>
-
 
 <footer class="w3-padding-small">
   <p>Natalia Palej<br>

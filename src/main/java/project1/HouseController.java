@@ -27,10 +27,22 @@ public class HouseController extends HttpServlet {
 		String address = request.getParameter("address");
 		String beds = request.getParameter("beds");
 		
+		if (owner.isEmpty()) {
+			owner = "Name Unknown";
+		}
+		if (address.isEmpty()) {
+			address = "Address Unknown";
+		}
+		if (beds.isEmpty()) {
+			beds = "0";
+		}
+		
 		// Create new House object
 		House house = new House(owner, address, beds);
+		
 		// Add the object to the list
 		HouseDAO.instance.saveHouse(house);
+		
 		
 		// Display list in the JSP file
 		List<House> houseList = HouseDAO.instance.list();
