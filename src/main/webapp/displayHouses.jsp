@@ -28,7 +28,7 @@ footer {
 <body>
 <h1 class="w3-center w3-padding">House Information Details</h1>
 
-<div class="w3-container w3-center">
+<div class="w3-panel w3-center">
 	<table class="w3-padding">
 		<tr>
 			<th class="w3-panel w3-border-right w3-border-bottom">Owner</th>
@@ -37,9 +37,9 @@ footer {
 		</tr>
 		<c:forEach items="${houseList}" var="houseObj">
 		<tr>
-			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.owner}" /></td>
-			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.address}" /></td>
-			<td class="w3-panel w3-border-bottom"><c:out value="${houseObj.beds}" /></td>
+			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.owner}" default="name unknown" /></td>
+			<td class="w3-panel w3-border-right w3-border-bottom"><c:out value="${houseObj.address}" default="address unknown"/></td>
+			<td class="w3-panel w3-border-bottom"><c:out value="${houseObj.beds}" default="0"/></td>
 		</tr>
 		</c:forEach>
 	</table>

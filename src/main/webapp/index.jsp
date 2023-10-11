@@ -28,11 +28,17 @@ footer {
 
 <div style="width: 800px; opacity: 0.8;" class="w3-margin w3-white">
 
-	<form method="post" action="HouseController" class="w3-container w3-border w3-padding-16">
-		<div class="w3-container w3-half w3-padding-small">Owner: </div> <div class="w3-container w3-half w3-padding-small"><input type="text" name="owner"></div>
-		<div class="w3-container w3-half w3-padding-small">Address: </div> <div class="w3-container w3-half w3-padding-small"><input type="text" name="address"></div>
-		<div class="w3-container w3-half w3-padding-small">Number of Bedrooms: </div> <div class="w3-container w3-half w3-padding-small"><input type="text" name="beds"></div>
-		<div><input type="submit" value="Submit" class="w3-container w3-center w3-hover-pink w3-right"></div>
+	<form method="post" action="HouseController" class="w3-container">
+		<label class="w3-text-purple"><b>Owner</b></label> 
+		<input type="text" name="owner" class="w3-input w3-border w3-light-pink">
+		<br>
+		<label class="w3-text-purple"><b>Address</b></label> 
+		<input type="text" name="address" class="w3-input w3-border w3-light-pink">
+		<br>
+		<label class="w3-text-purple"><b>Number of Bedrooms</b></label> 
+		<input type="text" name="beds" class="w3-input w3-border w3-light-pink">
+		<br>
+		<div><input type="submit" value="Submit" class="w3-padding-large w3-right w3-hover-purple w3-round-large"></div>
 	</form>
 
 </div>
