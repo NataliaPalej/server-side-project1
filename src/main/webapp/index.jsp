@@ -15,7 +15,7 @@
 <h1 class="w3-center w3-allerta">House Information Form</h1>
 
 <div class="body">
-	<form method="post" action="HouseController" class="w3-container w3-padding-large">
+	<form method="post" action="HouseController" class="w3-container w3-padding">
 		<label>Owner</label> 
 		<input type="text" name="owner" class="w3-input">
 		<br>

@@ -34,13 +34,13 @@ footer {
 }
 
 table {
-  width: 100%;
-  margin: 0 auto;
+  width: 800px;
+  margin: 64px;
   background-color: white;
 }
 
 .table-container {
-  width: 600px;
+  width: 800px;
   opacity: 0.8;
   margin: 32px 0;
 }
