@@ -44,3 +44,15 @@ table {
   opacity: 0.8;
   margin: 32px 0;
 }
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.left-button {
+	padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 16px;
+}

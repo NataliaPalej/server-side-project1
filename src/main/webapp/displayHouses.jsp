@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
 <link rel="stylesheet" type="text/css" href="displayHouses.css">
+
+<script>
+function goBack() {
+    window.location.href = "index.jsp";
+}
+</script>
+
 <title>A00279259 Natalia Palej</title>
 
 </head>
@@ -28,6 +35,9 @@
 		</tr>
 		</c:forEach>
 	</table>
+	<div class="button-container">
+		<button onclick="goBack()" class="left-button w3-hover-purple">BACK</button>
+	</div>
 </div>
 
 <footer class="w3-padding-small">
