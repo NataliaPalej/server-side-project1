@@ -29,7 +29,7 @@ public enum HouseDAO {
 		boolean houseExists = false;
 		
 		for (House house : houseList) {
-			if (house.getAddress().equals(h.getAddress())) {
+			if (house.getAddress().equals(h.getAddress()) & (house.getOwner().equals(h.getOwner()))) {
 	            houseExists = true;
 	            System.out.println("House already exists");
 	            break;
